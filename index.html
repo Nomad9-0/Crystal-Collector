@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Game</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+</head>
+
+<body>
+    <h1 class="text-center">Crystals Collector!</h1>
+
+    <div class="instructions text-center">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to random numer, you lose the game if your total score goes above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it</p>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+            <div id="guessNum" class="col-sm numGuess"></div>
+            <div class="col-sm bg-primary score">
+                <p id="wins">Wins:</p>
+                <p id="losses">Losses:</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center crystals">
+            <div class="row">
+                <img id="red" class="col-md" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/659d2be7-ccb3-42e6-8f81-6acb515e5aa5/d9jkt7n-b8824b99-b396-41d6-a6d7-5a26e8ccf6fa.jpg/v1/fill/w_774,h_1032,q_70,strp/infinity_ruby_by_zsoltkosa_d9jkt7n-pre.jpg" alt="Responsive Image">
+                <img id="blue" class="col-md" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/659d2be7-ccb3-42e6-8f81-6acb515e5aa5/d9jktbf-ec17d5c3-8d12-4078-a046-55c8d571a110.jpg/v1/fill/w_774,h_1032,q_70,strp/infinity_sapphire_by_zsoltkosa_d9jktbf-pre.jpg" alt="blue crystal">
+                <img id="yellow" class="col-md" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/659d2be7-ccb3-42e6-8f81-6acb515e5aa5/d9jkso3-2539ac66-cbeb-483d-b4d1-6a12ff402f34.jpg/v1/fill/w_774,h_1032,q_70,strp/infinity_citrine_by_zsoltkosa_d9jkso3-pre.jpg" alt="Yellow crystal">
+                <img id="green" class="col-md" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/659d2be7-ccb3-42e6-8f81-6acb515e5aa5/d9jksw7-0ada1481-2821-4bca-87c4-5bd0b1168991.jpg/v1/fill/w_774,h_1032,q_70,strp/infinity_emerald_by_zsoltkosa_d9jksw7-pre.jpg" alt="green crystal">
+            </div>
+    </div>
+
+    <div class="text-center totalText">Your Total Score: </div>
+
+    <div id="total" class="text-center totalNum">0</div>
+    
+</body> 
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</html>
