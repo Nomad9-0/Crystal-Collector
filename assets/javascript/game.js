@@ -93,6 +93,7 @@ $(document).ready(function(){
                 playerNum = 0;
                 $('#total').text(playerNum);
                 wins++;
+                $('#wins').text('Wins: ' + wins);
             }  
         })
         $('#yellow').on('click', function (){
@@ -112,6 +113,7 @@ $(document).ready(function(){
                 playerNum = 0;
                 $('#total').text(playerNum);
                 wins++;
+                $('#wins').text('Wins: ' + wins);
             }  
         })
         $('#green').on('click', function (){
@@ -131,6 +133,7 @@ $(document).ready(function(){
                 playerNum = 0;
                 $('#total').text(playerNum);
                 wins++;
+                $('#wins').text('Wins: ' + wins);
             }  
         })    
 
